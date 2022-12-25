@@ -94,7 +94,7 @@ to initialize-topology
      if fitness_function  = "Fitness function 5"
        [set val fittness_function_5 pxcor pycor]
 
-     if fitness_function = "Fitness function 6"
+     if fitness_function = "F6 Easom Function"
        [set val fittness_function_6 pxcor pycor]
 
   ]
@@ -325,7 +325,9 @@ end
 
 ; dummy random fitness function to be implemented by students
 to-report fittness_function_6 [x y]
-  report random-normal 0 1;
+  let x1 90 /  max-x * x ; scale x to have a value from -90 to 90
+  let y1 180 /  max-y * y ; scale x to have a value from -180 to 180
+  report -1 * cos x1 * cos y1 * e ^ (-((x1 - pi) ^ 2 + (y1 - pi) ^ 2))
 end
 
 
@@ -361,7 +363,7 @@ end
 
 ; dummy random constrinat to be implemented by students
 to-report constrain_6 [x y]
-  report FALSE
+  report 10 * x < y ^ 2
 end
 
 ; dummy random constrinat to be implemented by students
@@ -672,7 +674,7 @@ CHOOSER
 55
 fitness_function
 fitness_function
-"Example function" "Fitness function 1" "Fitness function 2" "Fitness function 3" "Fitness function 4" "Fitness function 5" "Fitness function 6"
+"Example function" "Fitness function 1" "Fitness function 2" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function"
 1
 
 SWITCH
