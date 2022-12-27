@@ -97,6 +97,9 @@ to initialize-topology
      if fitness_function = "F6 Easom Function"
        [set val fittness_function_6 pxcor pycor]
 
+     if fitness_function = "F7 Booth's Function"
+       [set val fittness_function_7 pxcor pycor]
+
   ]
 
   let min-val min [val] of patches
@@ -328,6 +331,11 @@ to-report fittness_function_6 [x y]
   let x1 90 /  max-x * x ; scale x to have a value from -90 to 90
   let y1 180 /  max-y * y ; scale x to have a value from -180 to 180
   report -1 * cos x1 * cos y1 * e ^ (-((x1 - pi) ^ 2 + (y1 - pi) ^ 2))
+end
+
+; dummy random fitness function to be implemented by students
+to-report fittness_function_7 [x y]
+report ((x + 2 * y - 7) ^ 2) + ((2 * x + y - 5) ^ 2)
 end
 
 
@@ -674,8 +682,8 @@ CHOOSER
 55
 fitness_function
 fitness_function
-"Example function" "Fitness function 1" "Fitness function 2" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function"
-1
+"Example function" "Fitness function 1" "Fitness function 2" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function" "F7 Booth's function"
+7
 
 SWITCH
 10
@@ -812,8 +820,6 @@ PENS
 
 @#$#@#$#@
 ## WHAT IS IT?
-
-
 @#$#@#$#@
 default
 true
@@ -1097,7 +1103,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.1.1
+NetLogo 6.3.0
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
