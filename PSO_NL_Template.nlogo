@@ -365,7 +365,9 @@ end
 
 ; dummy random constrinat to be implemented by students
 to-report constrain_6 [x y]
-  report 10 * x < y ^ 2
+  ifelse 10 * x < y ^ 2
+  [report TRUE]
+  [report FALSE]
 end
 
 ; dummy random constrinat to be implemented by students
