@@ -82,7 +82,7 @@ to initialize-topology
      if fitness_function = "Fitness function 1"
        [set val fittness_function_1 pxcor pycor]
 
-     if fitness_function  = "Fitness function 2"
+     if fitness_function  = "F2 Schwefel Function"
        [set val fittness_function_2 pxcor pycor]
 
      if fitness_function = "Fitness function 3"
@@ -308,7 +308,9 @@ end
 
 ; dummy random fitness function to be implemented by students
 to-report fittness_function_2 [x y]
-  report random-normal 0 1;
+  let x1 90 /  max-x * x ; scale x to have a value from -90 to 90
+  let y1 180 /  max-y * y ; scale x to have a value from -180 to 180
+  report (-1 * x1 * sin (sqrt (abs x1))) - (y1 * sin (sqrt (abs y1)));
 end
 
 ; dummy random fitness function to be implemented by students
@@ -351,7 +353,7 @@ end
 
 ; dummy random constrinat to be implemented by students
 to-report constrain_2 [x y]
-  report FALSE
+  report x > 3 * y or 3 * x < y
 end
 
 ; dummy random constrinat to be implemented by students
@@ -371,7 +373,9 @@ end
 
 ; dummy random constrinat to be implemented by students
 to-report constrain_6 [x y]
-  report 10 * x < y ^ 2
+  ifelse 10 * x < y ^ 2
+  [report TRUE]
+  [report FALSE]
 end
 
 ; dummy random constrinat to be implemented by students
@@ -683,7 +687,7 @@ CHOOSER
 fitness_function
 fitness_function
 "Example function" "Fitness function 1" "Fitness function 2" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function" "F7 Booth's Function" 
-7
+1
 
 SWITCH
 10
