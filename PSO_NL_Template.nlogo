@@ -335,7 +335,7 @@ end
 
 ; dummy random fitness function to be implemented by students
 to-report fittness_function_7 [x y]
-report ((x + 2 * y - 7) ^ 2) + ((2 * x + y - 5) ^ 2)
+  report ((x + 2 * y - 7) ^ 2) + ((2 * x + y - 5) ^ 2);
 end
 
 
@@ -682,7 +682,7 @@ CHOOSER
 55
 fitness_function
 fitness_function
-"Example function" "Fitness function 1" "Fitness function 2" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function" "F7 Booth's function"
+"Example function" "Fitness function 1" "Fitness function 2" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function" "F7 Booth's Function" 
 7
 
 SWITCH
