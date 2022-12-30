@@ -82,7 +82,7 @@ to initialize-topology
      if fitness_function = "Fitness function 1"
        [set val fittness_function_1 pxcor pycor]
 
-     if fitness_function  = "F2 Schwefel function"
+     if fitness_function  = "F2 Schwefel Function"
        [set val fittness_function_2 pxcor pycor]
 
      if fitness_function = "Fitness function 3"
@@ -313,7 +313,9 @@ end
 
 ; dummy random fitness function to be implemented by students
 to-report fittness_function_2 [x y]
-  report 418.9829 * 2 + (-1 * x * sin(sqrt(abs(x))) - y * sin(sqrt(abs(y))))
+  let x1 90 /  max-x * x ; scale x to have a value from -90 to 90
+  let y1 180 /  max-y * y ; scale x to have a value from -180 to 180
+  report (-1 * x1 * sin (sqrt (abs x1))) - (y1 * sin (sqrt (abs y1)));
 end
 
 ; dummy random fitness function to be implemented by students
@@ -335,7 +337,7 @@ end
 to-report fittness_function_6 [x y]
   let x1 90 /  max-x * x ; scale x to have a value from -90 to 90
   let y1 180 /  max-y * y ; scale x to have a value from -180 to 180
-  report cos x1 * cos y1 * e ^ (-((x1 - pi) ^ 2 + (y1 - pi) ^ 2))
+  report -1 * cos x1 * cos y1 * e ^ (-((x1 - pi) ^ 2 + (y1 - pi) ^ 2))
 end
 
 ; dummy random fitness function to be implemented by students
@@ -356,9 +358,7 @@ end
 
 ; dummy random constrinat to be implemented by students
 to-report constrain_2 [x y]
-  ifelse ((x > 3 * y) or (3 * x < y))
-  [report TRUE]
-  [report FALSE]
+  report x > 3 * y or 3 * x < y
 end
 
 ; dummy random constrinat to be implemented by students
@@ -486,11 +486,11 @@ end
 GRAPHICS-WINDOW
 520
 10
-980
-471
+1021
+512
 -1
 -1
-2.25
+2.453
 1
 10
 1
@@ -553,7 +553,7 @@ population-size
 population-size
 1
 100
-13.0
+50.0
 1
 1
 NIL
@@ -568,7 +568,7 @@ personal-confidence
 personal-confidence
 0
 2
-0.8
+1.0
 0.1
 1
 NIL
@@ -583,7 +583,7 @@ swarm-confidence
 swarm-confidence
 0
 2
-1.6
+1.0
 0.1
 1
 NIL
@@ -598,7 +598,7 @@ particle-inertia
 particle-inertia
 0
 1.0
-0.3
+1.0
 0.01
 1
 NIL
@@ -640,7 +640,7 @@ particle-speed-limit
 particle-speed-limit
 1
 20
-13.0
+10.0
 1
 1
 NIL
@@ -691,7 +691,7 @@ CHOOSER
 55
 fitness_function
 fitness_function
-"Example function" "Fitness function 1" "F2 Schwefel function" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function" "F7 Booth's Function"
+"Example function" "Fitness function 1" "F2 Schwefel Function" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function" "F7 Booth's Function"
 7
 
 SWITCH
@@ -701,7 +701,7 @@ SWITCH
 143
 Constraints
 Constraints
-1
+0
 1
 -1000
 
@@ -1131,6 +1131,170 @@ NetLogo 6.3.0
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
+<experiments>
+  <experiment name="particle-inertia-f7-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty-coefficient">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="particle-inertia-f7-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty-coefficient">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="particle-inertia-f7-c9-penalty" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty-coefficient">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Penalty Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+</experiments>
 @#$#@#$#@
 @#$#@#$#@
 default
