@@ -106,24 +106,27 @@ to initialize-topology
   let max-val max [val] of patches
 
   ask patches [
+
     ;normalize the values to be between 0 and 1
     set val (val - min-val) / (max-val - min-val)
 
-    ;check whether the patch violates a constrain
-    ;if yes set its value to zero and color to red
-    ;otherwise, set the patch color according to its value
-    ifelse  ((violates pxcor  pycor) and (constraints = TRUE))
+     (ifelse  ((violates pxcor  pycor) and (constraints = TRUE) and (constraint_handling_method = "Penalty Method"))
      [
-         ifelse (constraint_handling_method = "Rejection Method")
-          [set val 0]
-          [set val val + penalty-coefficient]
-          set pcolor 15
+
+         set val val - penalty
+         ;set pcolor 15
+         set pcolor scale-color grey val 0.0  1
+     ]
+    (violates pxcor  pycor) and (constraints = TRUE) and  (constraint_handling_method = "Rejection Method")
+     [
+         set val 0
+         set pcolor 15
      ]
 
      [
          set pcolor scale-color gray val 0.0  1
 
-     ]
+     ])
 
     ]
 
@@ -829,12 +832,12 @@ SLIDER
 530
 177
 563
-penalty-coefficient
-penalty-coefficient
--1
+penalty
+penalty
+0
 1
--1.0
-0.5
+0.4
+0.1
 1
 NIL
 HORIZONTAL
