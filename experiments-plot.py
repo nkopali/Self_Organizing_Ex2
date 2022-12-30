@@ -29,7 +29,7 @@ data = pd.read_csv(filename, header=6)
 df = pd.DataFrame(data)
 
 sns.barplot(data=df, y=list(df['global-best-val']), x=list(df[to_plot]), errorbar=None)
-plt.title("Global best value depending on " + to_plot)
+plt.title("Global best value depending on " + to_plot + "for function " + function)
 plt.xlabel(to_plot)
 plt.ylabel("Global best value")
 
