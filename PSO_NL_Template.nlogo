@@ -334,7 +334,7 @@ end
 to-report fittness_function_6 [x y]
   let x1 90 /  max-x * x ; scale x to have a value from -90 to 90
   let y1 180 /  max-y * y ; scale x to have a value from -180 to 180
-  report -1 * cos x1 * cos y1 * e ^ (-((x1 - pi) ^ 2 + (y1 - pi) ^ 2))
+  report cos x1 * cos y1 * e ^ (-((x1 - pi) ^ 2 + (y1 - pi) ^ 2))
 end
 
 ; dummy random fitness function to be implemented by students
