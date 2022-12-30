@@ -353,7 +353,9 @@ end
 
 ; dummy random constrinat to be implemented by students
 to-report constrain_2 [x y]
-  report x > 3 * y or 3 * x < y
+  ifelse ((x > 3 * y) or (3 * x < y))
+  [report TRUE]
+  [report FALSE]
 end
 
 ; dummy random constrinat to be implemented by students
