@@ -116,8 +116,8 @@ to initialize-topology
      [
          ifelse (constraint_handling_method = "Rejection Method")
           [set val 0]
-          [set val val + penalty-coefficient]
-          set pcolor 15
+          [set va
+         set pcolor 15
      ]
 
      [
