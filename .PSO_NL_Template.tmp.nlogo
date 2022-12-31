@@ -553,7 +553,7 @@ population-size
 population-size
 1
 100
-50.0
+100.0
 1
 1
 NIL
@@ -692,7 +692,7 @@ CHOOSER
 fitness_function
 fitness_function
 "Example function" "Fitness function 1" "F2 Schwefel Function" "Fitness function 3" "Fitness function 4" "Fitness function 5" "F6 Easom Function" "F7 Booth's Function"
-7
+2
 
 SWITCH
 10
@@ -807,7 +807,7 @@ CHOOSER
 Constraint
 Constraint
 "Example" "Constraint 1" "Constraint 2" "Constraint 3" "Constraint 4" "Constraint 5" "Constraint 6" "Constraint 7" "Constraint 8" "Constraint 9" "Constraint 10"
-9
+6
 
 PLOT
 10
@@ -2431,6 +2431,1773 @@ NetLogo 6.3.0
       <value value="0.4"/>
       <value value="0.6"/>
       <value value="0.8"/>
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="personal-confidence-f7-c9-penalty" repetitions="100" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Penalty Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="personal-confidence-f7-c9-rejection" repetitions="100" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="personal-confidence-f7-noconstraints" repetitions="100" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="false"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="personal-confidence-f6-c2-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 2&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F6 Easom Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="personal-confidence-f2-c6-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 6&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F2 Schwefel Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="particle-speed-limit-f2-c6-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 6&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F2 Schwefel Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="0"/>
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="particle-speed-limit-f6-c2-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 2&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F6 Easom Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="0"/>
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="particle-speed-limit-f7-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="0"/>
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="swarm-confidence-f7-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="swarm-confidence-f2-c6-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 6&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F2 Schwefel Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="swarm-confidence-f6-c2-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 2&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F6 Easom Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="swarm-confidence-f7-c2-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 2&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="swarm-confidence-f7-c6-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 6&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="swarm-confidence-f2-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F2 Schwefel Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="swarm-confidence-f6-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="0"/>
+      <value value="0.2"/>
+      <value value="0.4"/>
+      <value value="0.6"/>
+      <value value="0.8"/>
+      <value value="1"/>
+      <value value="1.2"/>
+      <value value="1.4"/>
+      <value value="1.6"/>
+      <value value="1.8"/>
+      <value value="2"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F6 Easom Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="50"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f6-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F6 Easom Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f6-c2-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 2&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F6 Easom Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f6-c6-rejection-2" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 6&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F6 Easom Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f7-c6-rejection-2" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 6&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f7-c2-rejection-2" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 2&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f7-c9-rejection-2" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F7 Booth's Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f2-c9-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 9&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F2 Schwefel Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f2-c6-rejection" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 6&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F2 Schwefel Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-speed-limit">
+      <value value="10"/>
+    </enumeratedValueSet>
+  </experiment>
+  <experiment name="population-size-f2-c2-rejection-2" repetitions="10" runMetricsEveryStep="false">
+    <setup>setup</setup>
+    <go>iterate</go>
+    <timeLimit steps="600"/>
+    <metric>global-best-val</metric>
+    <metric>iterations</metric>
+    <enumeratedValueSet variable="trails-mode">
+      <value value="&quot;None&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="particle-inertia">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-load">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="swarm-confidence">
+      <value value="1"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="highlight-mode">
+      <value value="&quot;Best found&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="penalty">
+      <value value="0.5"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="constraint_handling_method">
+      <value value="&quot;Rejection Method&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraint">
+      <value value="&quot;Constraint 2&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="fitness_function">
+      <value value="&quot;F2 Schwefel Function&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="Constraints">
+      <value value="true"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="path-to-save">
+      <value value="&quot;filename.txt&quot;"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="population-size">
+      <value value="2"/>
+      <value value="4"/>
+      <value value="6"/>
+      <value value="8"/>
+      <value value="10"/>
+      <value value="12"/>
+      <value value="14"/>
+      <value value="16"/>
+      <value value="18"/>
+      <value value="20"/>
+      <value value="22"/>
+      <value value="24"/>
+      <value value="26"/>
+      <value value="28"/>
+      <value value="30"/>
+      <value value="32"/>
+      <value value="34"/>
+      <value value="36"/>
+      <value value="38"/>
+      <value value="40"/>
+      <value value="42"/>
+      <value value="44"/>
+      <value value="46"/>
+      <value value="48"/>
+      <value value="50"/>
+      <value value="52"/>
+      <value value="54"/>
+      <value value="56"/>
+      <value value="58"/>
+      <value value="60"/>
+      <value value="62"/>
+      <value value="64"/>
+      <value value="66"/>
+      <value value="68"/>
+      <value value="70"/>
+      <value value="72"/>
+      <value value="74"/>
+      <value value="76"/>
+      <value value="78"/>
+      <value value="80"/>
+      <value value="82"/>
+      <value value="84"/>
+      <value value="86"/>
+      <value value="88"/>
+      <value value="90"/>
+      <value value="92"/>
+      <value value="94"/>
+      <value value="96"/>
+      <value value="98"/>
+      <value value="100"/>
+    </enumeratedValueSet>
+    <enumeratedValueSet variable="personal-confidence">
       <value value="1"/>
     </enumeratedValueSet>
     <enumeratedValueSet variable="particle-speed-limit">

@@ -3,7 +3,7 @@ import pandas as pd
 
 path = os.path.abspath('')
 
-directory = path + '/experiments'
+directory = path + '/experiments/new-experiments'
 files = os.listdir(directory)
 count = 0
 for file in files:

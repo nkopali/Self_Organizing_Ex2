@@ -39,6 +39,7 @@ sns.barplot(data=df, y='has-global-best', x=list(df[to_plot]), errorbar=None)
 plt.title("% Global best value " + to_plot + " " + function + " " + (constraint_method if has_constraints else 'without constraints'))
 plt.xlabel(to_plot)
 plt.ylabel("% Global best value")
+plt.xticks(rotation=90)
 
 plt.savefig(filename.replace('csv','png'))
 
